@@ -43,10 +43,10 @@ if (isset($_POST["jogada"])) {
         $resultado = "Empate!";
         $_SESSION["empates"]++;
     } elseif (($jogada == "pedra" && $computador == "tesoura") || ($jogada == "papel" && $computador == "pedra") || ($jogada == "tesoura" && $computador == "papel")) {
-        $resultado = "Você ganhou!";
+        $resultado = "Deu sorte, ganhou!";
         $_SESSION["vitorias"]++;
     } else {
-        $resultado = "Você perdeu!";
+        $resultado = "Você perdeu kakakakakakak!";
         $_SESSION["derrotas"]++;
     }
 
@@ -75,7 +75,7 @@ echo "<p>Derrotas: " . $_SESSION["derrotas"] . "</p>";
 
 echo "<form method='post'>";
 echo "<input type='hidden' name='zerar_placar' value='true'>";
-echo "<input type='submit' value='Zerar placar'>";
+echo "<input class='zp' type='submit' value='Zerar placar'>";
 echo "</form>";
 
 if (isset($_POST['zerar_placar']) && $_POST['zerar_placar'] == 'true') {
