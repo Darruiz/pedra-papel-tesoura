@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" href="style.css">
-    <title>Teste array</title>
+    <title>Teste array rand</title>
 </head>
 <body>
-
-	<h1 class="c1t">Teste array</h1> <br>
+<div class="geral">
+    <div class="mg40"> 
+	<h1 class="c1t">Teste array rand</h1> <br> 
+</div>
+<div class= "mg40">
 	<?php
 session_start(); 
 
@@ -82,7 +85,7 @@ if (isset($_POST['zerar_placar']) && $_POST['zerar_placar'] == 'true') {
 }
 
 	?> 
-   
-
+   </div>
+</div>
 </body>
 </html>

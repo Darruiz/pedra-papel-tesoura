@@ -5,5 +5,18 @@
   }  
 
   .c1t { 
-    color: aqua;
+    color: rgb(22, 175, 175);
+  } 
+
+  .geral {
+    width: 100vw;
+    height: 100vh; 
+    justify-content: center; 
+    align-items: center;
   }
+
+  .mg40 {
+    margin-left: 40%;
+  } 
+
+  
